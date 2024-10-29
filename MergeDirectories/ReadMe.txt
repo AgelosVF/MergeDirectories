@@ -1,3 +1,8 @@
+Calling make compiles the code to the executable cmpcats that if you call without any arguments it will give you instructions about how to use it.
+Has two uses: 
+1. Print the files that exist only in each directory and sub directory by calling it as ./cmpcats -d dirname1 dirname2
+2. Create a new directory that has all the files of both directories but doesnt have duplicates of files that exist in both directories in the exact
+by calling as ./cmpcats -d dirname1 dirname2 -s newdirname
 Στον φάκελο Tests υπάρχουν φάκελοι με συνδυασμό των οποίων έλεγξα τον κωδικά μου. Συγκεκριμένα στον φάκελο LinkTest1
 υπάρχει κώδικας για ένα πρόχειρο πρόγραμμα σε C που αν γίνει compile και το τρέξετε θα φτιάξει μέσα του φακέλους
 και soft links.
