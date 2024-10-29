@@ -7,6 +7,7 @@ by calling as ./cmpcats -d dirname1 dirname2 -s newdirname
 υπάρχει κώδικας για ένα πρόχειρο πρόγραμμα σε C που αν γίνει compile και το τρέξετε θα φτιάξει μέσα του φακέλους
 και soft links.
 
+Rest of readme is in greek (will translate later) it explains the files and functions that are used.
 Ο κώδικας μου είναι χωρισμένος σε 7 αρχεία:
 1. cmpcats.h:  
 	Είναι το header file που περιέχει τους ορισμούς των διαμιραζόμενων μεταξύ αρχείων συναρτήσεων.
@@ -20,7 +21,7 @@ by calling as ./cmpcats -d dirname1 dirname2 -s newdirname
 	τις οποίες χρησιμοποιώ για να αλλάζω τις αρχές των absolute paths έτσι ώστε να τεστάρω αν ένα 
 	αρχείο ενός καταλόγου υπάρχει και στον άλλο και για να φτιάχνω τα αρχεία στον τρίτο κατάλογο.
 4. HashTable.c: 
-	Περιέχει τον κώδικα του hashtable που είχα παραδώσει στην πρώτη εργασία. Στο hashtable αποθηκεύω τα
+	Περιέχει τον κώδικα του ενος linear hashtable. Στο hashtable αποθηκεύω τα
 	inode number και paths των καινούργιων αρχείων που δημιουργώ. Κάθε φορά που πάω να φτιάξω ένα
 	καινούργιο αρχείο κοιτάω αν υπάρχει στο hashtable μου το inode του. Αν ναι τότε δημιουργώ ένα
 	hardlink σε αυτό. Αλλιώς δημιουργώ το αρχείο και προσθέτω τα στοιχειά του στο table. Έτσι χειρίζομαι
